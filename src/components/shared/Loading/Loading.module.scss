@@ -1,0 +1,11 @@
+.content {
+  @apply flex flex-col items-center justify-center;
+}
+
+.fullContent {
+  @apply absolute top-0 left-0 w-screen h-screen;
+}
+
+.spinner {
+  @apply animate-spin;
+}

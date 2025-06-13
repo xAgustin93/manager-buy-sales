@@ -1,0 +1,15 @@
+.input {
+  @apply mb-4;
+}
+
+.btnSubmit {
+  @apply w-full mt-5;
+}
+
+.selectTrigger {
+  @apply w-full mb-4;
+}
+
+.stockPurchase {
+  @apply opacity-60 text-xs flex flex-col;
+}

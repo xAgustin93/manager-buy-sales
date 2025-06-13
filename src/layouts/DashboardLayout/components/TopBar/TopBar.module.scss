@@ -1,0 +1,42 @@
+.container {
+  @apply flex h-14 items-center justify-between gap-4 border-b bg-muted/40 px-4;
+  @apply lg:h-[60px] lg:px-6;
+}
+
+.nameApp {
+  @apply font-bold tracking-[4px];
+}
+
+.btnLogout {
+  @apply rounded-r-full;
+}
+
+.iconLogout {
+  @apply h-5 w-5;
+}
+
+.btnMenuMobile {
+  @apply flex flex-col;
+  @apply md:hidden;
+}
+
+.logoApp {
+  @apply flex mb-4;
+
+  > span {
+    @apply ml-3;
+  }
+}
+
+.itemMenu {
+  @apply mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground;
+  @apply hover:text-foreground;
+
+  > svg {
+    @apply h-5 w-5;
+  }
+}
+
+.menuMobile {
+  @apply p-4;
+}

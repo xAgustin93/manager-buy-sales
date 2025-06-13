@@ -1,0 +1,22 @@
+.container {
+  @apply rounded-lg;
+
+  > button {
+    @apply hidden;
+  }
+}
+
+.modalSmall {
+  @apply max-sm:max-w-[calc(100%-20px)];
+}
+
+.modalMedium {
+  @apply max-w-[calc(100%-20px)];
+  @apply md:max-w-[70%];
+  @apply lg:max-w-[50%];
+}
+
+.modalLarge {
+  @apply max-w-[calc(100%-20px)];
+  @apply md:max-w-[calc(100%-50px)];
+}

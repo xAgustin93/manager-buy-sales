@@ -1,0 +1,19 @@
+.twoInput {
+  @apply grid grid-cols-2 gap-4 mt-4;
+}
+
+.label {
+  @apply text-sm;
+}
+
+.input {
+  @apply h-10;
+}
+
+.btnSubmit {
+  @apply w-full mt-5;
+}
+
+.selectTrigger {
+  @apply w-full;
+}

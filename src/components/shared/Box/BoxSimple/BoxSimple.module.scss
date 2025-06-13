@@ -1,0 +1,11 @@
+.container {
+  @apply bg-slate-100 rounded-lg shadow-sm;
+}
+
+.title {
+  @apply py-3 px-8 border-b border-b-slate-200 font-bold;
+}
+
+.content {
+  @apply px-5 py-14 flex flex-col items-center text-slate-500;
+}
