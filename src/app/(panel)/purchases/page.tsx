@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { PurchaseModel } from "@/models";
 import { purchasesCtrl } from "@/api";
 import { Skeleton } from "@/components/shared";
@@ -13,11 +13,7 @@ export default function PurchasesPage() {
   const [editPurchase, setEditPurchase] = useState<PurchaseModel>();
   const [hasStock, setHasStock] = useState(true);
 
-  useEffect(() => {
-    getPurchases();
-  }, [hasStock]);
-
-  const getPurchases = async () => {
+  const getPurchases = useCallback(async () => {
     try {
       setPurchases(undefined);
       const response = await purchasesCtrl.getAll(hasStock);
@@ -25,7 +21,11 @@ export default function PurchasesPage() {
     } catch (error) {
       console.error(error);
     }
-  };
+  }, [hasStock]);
+
+  useEffect(() => {
+    getPurchases();
+  }, [hasStock, getPurchases]);
 
   if (!purchases) return <Skeleton.List />;
 

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { SaleModel } from "@/models";
 import { ENV } from "@/utils";
 

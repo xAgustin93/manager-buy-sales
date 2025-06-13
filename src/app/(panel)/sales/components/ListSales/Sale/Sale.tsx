@@ -11,7 +11,6 @@ import {
 import { SaleProps } from "./Sale.types";
 import styles from "./Sale.module.scss";
 import { MoreHorizontal } from "lucide-react";
-import { set } from "lodash";
 
 export function Sale(props: SaleProps) {
   const { sale, setEditSale, setDeleteSale } = props;
